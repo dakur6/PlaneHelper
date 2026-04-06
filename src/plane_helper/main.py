@@ -80,7 +80,7 @@ class FindYCommand(command.Command):
         
         x, z = list(map(float, args))
         try:
-            print(f"X = {current_plane.find_y(x, z):.2f}")
+            print(f"Y = {current_plane.find_y(x, z):.2f}")
         except ValueError as e:
             print(e)
 
@@ -98,7 +98,7 @@ class FindZCommand(command.Command):
         
         x, y = list(map(float, args))
         try:
-            print(f"X = {current_plane.find_z(x, y):.2f}")
+            print(f"Z = {current_plane.find_z(x, y):.2f}")
         except ValueError as e:
             print(e)
 
